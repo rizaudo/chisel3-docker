@@ -9,6 +9,12 @@ on:
     # Publish `v1.2.3` tags as releases.
     tags:
       - v*
+    paths-ignore: 
+      - 'docker-compose.yaml'
+      - 'docker-compose.test.yaml'
+      - 'README.md'
+      - 'Makefile'
+      - 'LICENSE'
 
   # Run tests for any PRs.
   pull_request:
