@@ -52,9 +52,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-
-      - name: Build image
-        run: docker build . --file Dockerfile --tag $IMAGE_NAME
       
       - name: Push to Docker Hub
         uses: docker/build-push-action@v1
