@@ -16,9 +16,6 @@ on:
       - 'Makefile'
       - 'LICENSE'
 
-  # Run tests for any PRs.
-  pull_request:
-
 env:
   IMAGE_NAME: chisel3-docker
 
