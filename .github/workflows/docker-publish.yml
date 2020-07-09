@@ -1,4 +1,4 @@
-name: Docker
+name: Docker-build-and-push
 
 on:
   push:
@@ -38,6 +38,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: rizaudo/chisel3-docker
           tag_with_ref: true
+          add_git_labels: true
       
       - name: Push to GitHub Packages
         uses: docker/build-push-action@v1
@@ -47,4 +48,5 @@ jobs:
           registry: docker.pkg.github.com
           repository: rizaudo/chisel3-docker/chisel3-docker
           tag_with_ref: true
+          add_git_labels: true
 

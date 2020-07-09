@@ -2,6 +2,20 @@ FROM ubuntu:18.04
 
 MAINTAINER rizaudo <rizaudo@users.noreply.github.com>
 
+#ARG BUILD_DATE
+#ARG VCS_REF
+#ARG VERSION
+LABEL org.label-schema.name="chisel3-docker" \
+#      org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.description="Container for run chisel3 CI/CD(with verilator support)." \
+      org.label-schema.url="https://github.com/rizaudo/chisel3-docker" \
+#      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url="https://github.com/rizaudo/chisel3-docker" \
+      org.label-schema.vendor="rizaudo" \
+#      org.label-schema.version=$VERSION \
+      org.label-schema.schema-version="1.0"
+
+
 ENV VERILATOR_DEPS \
     autoconf \
     bc \
