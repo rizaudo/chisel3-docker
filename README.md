@@ -6,4 +6,4 @@ This project enables CI/CD of Chisel3(even if needed verilator) project using Do
 
 ## How to use interactively
 `docker run -it -v $(pwd):/chisel rizaudo/chisel3-docker /bin/bash`
-ant then `sbt test` or something you wants.
+and then `sbt test` or something you wants.
